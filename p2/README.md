@@ -222,7 +222,7 @@ Consult OSTEP 31.12 for a skeleton consumer. Remember, all the synchronization p
 
 The producer should fill the buffer with repetitions of the capital letters in the alphabet. `A` through `Z`. 
 
-Remember to check `keep_going` within your loop producing one character at a time. Also after producing EACH character, there is a TWO (2) percent change of going to sleep. The minimum time to sleep and maximum time to sleep FOR THE PRODUCER is specified by:
+Remember to check `keep_going` within your loop producing one character at a time. Also after producing EACH character, there is a TWO (2) percent chance of going to sleep. The minimum time to sleep and maximum time to sleep FOR THE PRODUCER is specified by:
 
 ```c++
 const int USLEEP_TIME_MAX = 50000;
@@ -243,7 +243,7 @@ Here is what I print:
 cout << "Consumer got characters out of order. C: " << c << " C_OLD: " << c_old << endl;
 ```
 
-Remember to check `keep_going` within your loop consuming one character at a time. Also after consuming EACH character, there is a TWO (2) percent change of going to sleep. The minimum time to sleep and maximum time to sleep FOR THE CONSUMER is specified by:
+Remember to check `keep_going` within your loop consuming one character at a time. Also after consuming EACH character, there is a TWO (2) percent chance of going to sleep. The minimum time to sleep and maximum time to sleep FOR THE CONSUMER is specified by:
 
 ```c++
 const int USLEEP_TIME_MAX = 40000;
@@ -284,3 +284,5 @@ Consumer caught signal 0x2
 Monitor caught signal 0x2
 $
 ```
+
+Notice the result of skewing... the consumer, being faster than the producer, keeps the pipe fairly empty. This is not always the case of course.
