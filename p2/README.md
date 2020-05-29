@@ -105,11 +105,11 @@ struct SharedMemory
 	sem_t fillCount;					//             student
 	int p_index;						// The head "pointer"
 	int c_index;						// The tail "pointer"
-	unsigned char buffer[BUFFER_SIZE];	// The data being transferred
+	unsigned char buffer[BUFFER_SIZE];			// The data being transferred
 };
 ```
 
-As the comment says, you cannot change this file for any reason. Doing so will likely cause your program to appear NOT to work.
+As the comment says, you cannot change this file for any reason. Doing so will likely cause your program to NOT to work.
 
 ### Signs of life
 
