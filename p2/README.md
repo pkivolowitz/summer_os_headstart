@@ -103,8 +103,8 @@ struct SharedMemory
 	sem_t block;						// Left
 	sem_t emptyCount;					//      to the 
 	sem_t fillCount;					//             student
-	int p_index;						// The head "pointer"
-	int c_index;						// The tail "pointer"
+	int p_index;						// The head index
+	int c_index;						// The tail index
 	unsigned char buffer[BUFFER_SIZE];			// The data being transferred
 };
 ```
