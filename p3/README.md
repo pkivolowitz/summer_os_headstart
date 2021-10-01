@@ -107,7 +107,7 @@ Error. Job: C not blocked.
 
 Unblocked jobs return to the runnables. The scheduler is not run unless the system was idle.
 
-### runnables
+### runnable
 
 The runnables, if any, are listed. Example:
 
