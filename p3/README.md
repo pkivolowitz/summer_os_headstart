@@ -33,7 +33,7 @@ Your program will take a data file as its command line argument. It contains com
 | interrupt | | | A timer interrupt has occurred - the currently running job's quantum is over |
 | block | | | The currently running job has become blocked |
 | unblock | NAME | | The named job becomes unblocked - it is an error if it was not blocked |
-| runnables | | | Print information about the jobs in the runnable queue |
+| runnable | | | Print information about the jobs in the runnable queue |
 | running | | | Print information about the currently running job |
 | blocked | | | Print information about the jobs on the blocked queue |
 
