@@ -12,7 +12,7 @@ Prints program usage. Your text should include any defaults and limitations on v
 
 ### -z size
 
-Specifies the size of a vector of `uint32_t`. The minimum is `(1 << 8)`. The default for this parameter is `(1 << 20)`.
+Specifies the size of a vector of `uint32_t`. The minimum is `(1 << 8)`. The default for this parameter (and also its maximum allowable value) is `(1 << 20)`.
 
 ### -s seed
 
